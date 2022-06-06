@@ -1,0 +1,28 @@
+<div class="container mt-5 text-center">
+    <table class="table table-bordered">
+        <thead class="table-primary">
+            <tr>
+                <th >id</th>
+                <th>name</th>
+                <th>username</th>
+                <th>email</th>
+                <th>street</th>
+                <th>suit</th>
+                <th>city</th>
+                <th>zipcode</th>
+            </tr>
+        </thead>
+        <tbody *ngFor="let item of jasonArr">
+            <tr>
+                <td><a [routerLink]="['/user',item.id]">{{item.id}}</a></td>
+                <td>{{item.name}}</td>
+                <td>{{item.username}}</td>
+                <td>{{item.email}}</td>
+                <td>{{item.address.street}}</td>
+                <td>{{item.address.suite}}</td>
+                <td>{{item.address.city}}</td>
+                <td>{{item.address.zipcode}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

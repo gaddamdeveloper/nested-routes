@@ -1,0 +1,29 @@
+<div class="container mt-5">
+    <table  class="table table-bordered w-25">
+        <thead>
+            <tr>
+                <th>Name:</th>
+                <td>{{userArry.name}}</td>
+            </tr>
+            <tr>
+                <th>userName:</th>
+                <td>{{userArry.username}}</td>
+            </tr>
+            <tr>
+                <th>email:</th>
+                <td>{{userArry.email}}</td>
+            </tr>
+        </thead>
+    </table>
+<div>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" routerLink="address">Address</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="company">Users</a>
+          </li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>
+</div>
